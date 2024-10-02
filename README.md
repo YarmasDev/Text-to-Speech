@@ -1,5 +1,3 @@
-Here’s a tailored `README.md` for your text-to-audio application using PlayHT:
-
 ```markdown
 # Audio Generator with PlayHT
 
