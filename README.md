@@ -1,4 +1,4 @@
-```markdown
+
 # Audio Generator with PlayHT
 
 This project utilizes Streamlit and PlayHT to convert text to audio. Users can enter text, select from various voices, and generate audio files which can be played and downloaded directly through the web application.
