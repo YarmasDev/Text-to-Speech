@@ -1,32 +1,34 @@
 ```markdown
 # Audio Generator with PlayHT
 
-This Streamlit application allows users to convert text into audio using the PlayHT text-to-speech API. Users can select from a variety of voices with different accents and download the generated audio.
+This project utilizes Streamlit and PlayHT to convert text to audio. Users can enter text, select from various voices, and generate audio files which can be played and downloaded directly through the web application.
 
 ## Features
 
-- Enter text and generate audio.
-- Select from various voice options with accents.
-- Play generated audio directly in the app.
-- Download the generated audio file.
+- Enter text to generate audio.
+- Select from a variety of voices with different accents.
+- Play generated audio directly in the browser.
+- Download the generated audio file in MP3 format.
 
-## Prerequisites
+## Getting Started
+
+To run this project locally, ensure you have the required packages installed. You can do this by using the `requirements.txt` file provided in the repository.
+
+### Prerequisites
 
 - Python 3.7 or higher
 - Streamlit
 - PlayHT API credentials
 
-## Installation
+### Installation
 
-1. Clone this repository:
-
+1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+   git clone <repository-url>
+   cd audio_generator
    ```
 
 2. Install the required packages:
-
    ```bash
    pip install -r requirements.txt
    ```
@@ -41,16 +43,19 @@ This Streamlit application allows users to convert text into audio using the Pla
    API_KEY = "your_api_key"
    ```
 
-## Usage
-
-1. Run the Streamlit application:
-
+4. Run the Streamlit app:
    ```bash
    streamlit run app.py
    ```
 
-2. Open your web browser and navigate to `http://localhost:8501`.
+## Usage
 
-3. Enter your text, select a voice, and click "Generate audio" to create your audio file.
+1. Navigate to the app in your browser after running the above command. By default, it will be available at `http://localhost:8501`.
+2. Enter the text you want to convert to audio.
+3. Select a voice from the dropdown menu.
+4. Click the "Generate audio" button to create your audio file.
+5. The generated audio can be played and downloaded directly from the app.
 
-4. Use the download button to save the audio file to your device.
+## Live Demo
+
+You can also try the live version of the application here: https://text-to-speech-svz9vpqchvmfyvpegkbmfv.streamlit.app/
