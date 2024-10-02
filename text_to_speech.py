@@ -1,15 +1,15 @@
 import streamlit as st
 import os
 import requests
-from dotenv import load_dotenv, find_dotenv
 from pyht import Client, TTSOptions, Format
+from dotenv import load_dotenv, find_dotenv
 
-# Load credentials from .env
-load_dotenv(find_dotenv(), override=True)
+# Load credentials from .env if running locally
+load_dotenv(find_dotenv())
 
 # Initialize PlayHT with your credentials
-playht_user_id = os.environ.get("PLAYHT_USER_ID")
-playht_api_key = os.environ.get("PLAYHT_API_KEY")
+playht_user_id = st.secrets.get("PLAYHT_USER_ID") or os.getenv("PLAYHT_USER_ID")
+playht_api_key = st.secrets.get("PLAYHT_API_KEY") or os.getenv("PLAYHT_API_KEY")
 client = Client(playht_user_id, playht_api_key)
 
 # Function to obtain voices from the PlayHT API
