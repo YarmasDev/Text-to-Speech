@@ -54,7 +54,3 @@ To run this project locally, ensure you have the required packages installed. Yo
 3. Select a voice from the dropdown menu.
 4. Click the "Generate audio" button to create your audio file.
 5. The generated audio can be played and downloaded directly from the app.
-
-## Live Demo
-
-You can also try the live version of the application here: https://text-to-speech-svz9vpqchvmfyvpegkbmfv.streamlit.app/
